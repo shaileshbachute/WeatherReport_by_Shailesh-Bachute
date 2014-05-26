@@ -262,7 +262,6 @@
 - (IBAction)GettingCurrentLocationWeatherData:(id)sender
 {
     
-    
     Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
     
@@ -274,14 +273,8 @@
         
         [self getCurrentLocation];          //This method gives user current location i.e. Latitude and longitude.
         
-//        latitude=17.678653;         //Temporary assigned bacause Simulator not giving the latitude and longitude.
-//        longitude=75.894434;
-
-        if (latitude==0.0000000 & longitude==0.0000000)
-        {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Sorry !" message: @"Fail to get your current location.\nPlease try again" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Try again",nil];
-            [alert show];
-        }
+        //        latitude=17.678653;         //Temporary assigned bacause Simulator not giving the latitude and longitude.
+        //        longitude=75.894434;
         
         
         [self getCurrentCityName];   //Call this method to get city name with the help of LatLong.
@@ -296,6 +289,12 @@
         
     }
     
+    if (latitude==0.0000000 & longitude==0.0000000)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Sorry !" message: @"Fail to get your current location.\nPlease try again" delegate: self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Try again",nil];
+        [alert show];
+    }
+
 }
 
 
@@ -304,8 +303,7 @@
 -(void)getCurrentLocation
 {
     
-    CLLocationManager *sourceLocationManager;
-    sourceLocationManager = [[CLLocationManager alloc] init];
+    sourceLocationManager = [[CLLocationManager alloc] init];   //Object of CLLocaiotn manager is defined in .h beacuse alert of the access location services disappears automatically without any user interaction
     sourceLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     sourceLocationManager.delegate=self;
 
@@ -367,7 +365,7 @@
     if([title isEqualToString:@"Try again"])
     {
         NSLog(@"Try again...");
-        [self getCurrentLocation];  //Call again for getting user current location if Try Again is pressed by user throgh UIAlertView.
+        [self GettingCurrentLocationWeatherData:nil];  //Call again for getting user current location if Try Again is pressed by user throgh UIAlertView.
     }
    
 }

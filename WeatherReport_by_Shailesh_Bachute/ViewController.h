@@ -18,6 +18,7 @@
     NSMutableArray *dayTempArray,*nightTempArray,*eveningTempArray,*morningTempArray;
     NSMutableArray *minTempArray,*maxTempArray;
     NSMutableString *strCityName,*strCurrentTemp;
+    CLLocationManager *sourceLocationManager;
   
     float latitude,longitude;           //Float variables to store latlongs.
 }
