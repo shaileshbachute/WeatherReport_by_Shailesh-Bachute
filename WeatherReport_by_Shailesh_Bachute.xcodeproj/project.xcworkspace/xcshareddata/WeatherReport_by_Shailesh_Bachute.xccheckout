@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6711A950-AFA1-4831-A843-3862D46A2F13</string>
+	<string>26103C6E-E446-4BEE-83BC-256604B2B9F2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WeatherReport_by_Shailesh_Bachute</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5CF4E63D-FAB3-4070-8ADE-25310B361582</key>
-		<string>https://bitbucket.org/shailesh89/weather-report-app1.0_by-shailesh-bachute.git</string>
+		<key>E287940C-B9A9-40DB-A860-BB9D97985821</key>
+		<string>https://github.com/shaileshbachute/WeatherReport_by_Shailesh-Bachute.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WeatherReport_by_Shailesh_Bachute.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5CF4E63D-FAB3-4070-8ADE-25310B361582</key>
+		<key>E287940C-B9A9-40DB-A860-BB9D97985821</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/shailesh89/weather-report-app1.0_by-shailesh-bachute.git</string>
+	<string>https://github.com/shaileshbachute/WeatherReport_by_Shailesh-Bachute.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5CF4E63D-FAB3-4070-8ADE-25310B361582</string>
+	<string>E287940C-B9A9-40DB-A860-BB9D97985821</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5CF4E63D-FAB3-4070-8ADE-25310B361582</string>
+			<string>E287940C-B9A9-40DB-A860-BB9D97985821</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WeatherReport_By_Shailesh_Bachute</string>
+			<string>WeatherReport_by_Shailesh-Bachute</string>
 		</dict>
 	</array>
 </dict>
